@@ -1,0 +1,15 @@
+Package: moach
+Type: Package
+Title: Facilitates Multiomics Assay Characterization
+Version: 0.1.0
+Authors@R: person("Teo", "Sakel", email = "teo.sakel@gmail.com", role = c("aut", "cre"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Automates some frequently required tasks when dealing with assay
+    characterization. The main goal of this package is to save its authors time
+    when dealing with the analysis pipeline of NTUA's Biolab and ProtAtOnce Ltd.
+    and not to be globally usefull. USE AT YOUR OWN RISK!
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: stringr,
+    tidyr
