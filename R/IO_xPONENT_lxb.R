@@ -27,7 +27,8 @@ read_lxb <- function(path, ...) {
                            stringsAsFactors = FALSE)
         return(cbind(well, data))
     } else if (file_ext == "zip") {
-        dpath <- tempdir()
+        dpath <- tempfile(pattern = "lxb")
+        dir.create(dpath)
         on.exit(unlink(dpath, recursive = TRUE))
         unzip(path, exdir = dpath)
         path <- dpath
